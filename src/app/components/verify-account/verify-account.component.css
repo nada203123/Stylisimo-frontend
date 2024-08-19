@@ -1,0 +1,56 @@
+.container {
+    margin-top: 200px;
+margin-bottom: 200px;
+width:1100px
+}
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    background-color:  rgba(243, 249, 255);
+  }
+
+  .card-title {
+    margin-bottom: 20px;
+    color:rgb(	34, 59, 121)
+  }
+
+  .form-group {
+  
+    margin-bottom: 10px;
+  width: 300px;
+    align-items: center;
+justify-content: center;
+margin-left: 90px;
+
+
+  }
+
+.btn-primary {
+    background-color: rgb(	34, 59, 121); /* Bootstrap primary color */
+    color: #fff; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Rounded corners */
+    padding: 12px; /* Adjust padding */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Shadow effect */
+    margin-left: 190px;
+    margin-top: 15px;
+    width: 110px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.btn-primary:disabled {
+    background-color: rgb(	34, 59, 121); /* Keep the color same for disabled */
+    opacity: 0.5; /* Dim the button */
+    cursor: not-allowed; /* Change cursor on disabled */
+}
+.custom-input {
+    border-radius: 20px !important;
+    padding: 10px;
+}

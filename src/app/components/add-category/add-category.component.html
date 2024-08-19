@@ -1,0 +1,23 @@
+
+
+<div class="mat-dialog-container">
+<h1  class = "h1" mat-dialog-title>Add a category</h1>
+<div mat-dialog-content>
+  <div class="input-container">
+    <input  class="input" [(ngModel)]="category.name" placeholder="Category Name" type="text">
+  </div>
+
+  <div *ngIf="isDuplicateName" class="error-message">
+    Category name already exists. Please choose a different name.
+  </div>
+
+  <div *ngIf="isCategoryNameEmpty" class="error-message">
+    Category name is required.
+  </div>
+ 
+</div>
+<div class="mat-dialog-actions" mat-dialog-actions>
+  <button class="button" mat-button (click)="onCancel()">Cancel</button>
+  <button  class="button1" mat-button (click)="addCategory()">Add </button>
+</div>
+</div>

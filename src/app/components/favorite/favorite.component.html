@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+<div class="product-overview" id="product-overview">
+    <h4 *ngIf="favorites.length === 0">No product in your favorite list.</h4>
+    <div class="product-cards" *ngIf="favorites.length > 0">
+     <div class="product-card" *ngFor="let product of favorites">
+        <div class="image-container">
+            <img [src]= "'http://localhost:4000/' + product.image" alt="{{ product.name }}" class="product-image">
+            <button class="details-button" (click)="goToProduct(product.productId)" >More Details</button>
+         </div>
+            <h3 class="product-name">{{ product.name }}</h3>
+            <p class="product-price">{{ product.price   }} DT</p>
+     </div>
+    
+    </div>
+</div>
+  
+  
+<app-informations></app-informations>

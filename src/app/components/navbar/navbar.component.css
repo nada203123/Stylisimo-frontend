@@ -1,0 +1,108 @@
+.navbar{
+    background-color: rgba(243, 249, 255);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0; /* Aligns the navbar to the top */
+    left: 0;
+    right: 0;
+}
+.logo {
+    width: 250px;
+    cursor: pointer;
+
+   
+}
+.navbar-left {
+    flex: 1;
+    margin-top: -30px;
+}
+
+.navbar-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -30px;
+}
+.material-symbols-outlined {
+    margin: 0 8px;
+    cursor: pointer;
+    color:rgb(	34, 59, 121)
+  
+}
+.navbar-center {
+    flex: 2;
+    text-align: center;
+  }
+  .navbar-center ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar-center li {
+    margin: 0 15px;
+    color:rgb(	34, 59, 121);
+    font-weight: 700;
+    font-size:large;
+    position: relative; 
+    display: inline-block; 
+    padding: 7px;
+    cursor: pointer;
+  }
+  .signup-button {
+    background-color: rgb(	34, 59, 121);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+    margin-left: 10px; 
+    transition: background-color 0.3s;
+}
+
+.signup-button:hover {
+    background-color: #0056b3;
+}
+.navbar-center li ul {
+ 
+   
+  
+    border: 1px solid rgb(	34, 59, 121); 
+    border-radius: 10px;
+   
+  
+  }
+  
+  .navbar-center li:hover ul {
+    display: block; 
+  }
+  
+  .dropdown li {
+ font-weight: 400;
+  font-size: 15px;
+  cursor:pointer;
+  }
+  
+  
+  .dropdown {
+    display: none; 
+    position: absolute; /* Position relative to the parent li */
+    top: 100%; /* Position it directly below the category */
+    left: 0;
+    background: rgb(255, 255, 255); /* Background color of the dropdown */
+ 
+    z-index: 1000; /* Ensure it appears above other elements */
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
+    width: 100px; /* Optional: Set a width for the dropdown */
+  }

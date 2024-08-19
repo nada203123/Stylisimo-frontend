@@ -1,0 +1,54 @@
+.input-container {
+  max-width: 300px; /* Adjust the width as needed */
+}
+
+.form-control {
+  width: 100%; /* Make the input field take full width of the container */
+  padding: 8px; /* Adjust padding for a smaller look */
+}
+
+.text-right {
+  text-align: right; /* Align the button to the right */
+  margin-right: 80px;
+  margin-top: 50px;
+}
+
+.custom-button {
+  background-color: rgb(	34, 59, 121); /* Bootstrap primary color */
+  color: white;
+  border: none; /* Remove default border */
+  padding: 5px 10px; /* Add padding for a nicer button look */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.custom-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.text-center{
+    font-size: 40px;
+    font-weight: bold;
+    color:rgb(	34, 59, 121);
+    font-style: sans-serif;
+}
+.form{
+    margin-top: 60px;
+    margin-left: 60px;
+}
+.form-group{
+    margin-top: 20px;
+}
+
+.label{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-style: sans-serif;
+    font-weight: bold;
+}
+.error-message {
+  color: #d41a1a; /* Red color for the error message */
+  font-size: 14px;
+  margin-top: 5px;
+  
+}

@@ -1,0 +1,67 @@
+
+.home-layout {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    height: 100vh; /* Full viewport height */
+    background-color: rgb(	34, 59, 121);
+  }
+  
+  .right {
+    margin-top: 20px;
+    padding: 20px;
+    
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid rgba(240, 240, 240, 0.8);
+    border-radius: 10px;
+    background-color: rgba(243, 249, 255);
+    height: calc(100vh - 5vh);
+  }
+  @media only screen and (min-width: 992px) {
+    .home-layout {
+      grid-template-columns: 270px 1fr; /* Adjusted columns for larger screens */
+    }
+  
+    .left-container {
+      width: 270px;
+   
+      
+    }
+  
+    .right {
+      margin-left: 30px;
+      margin-right: 20px;
+      
+    }
+  }
+ 
+.admin-icon{
+  width:30px;
+  margin-left: 1140px;
+cursor: pointer;
+
+}
+.dropdown {
+  position: absolute; /* Position the dropdown relative to the icon */
+  background-color: white; /* Background color */
+  border: 1px solid #ccc; /* Border */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Shadow */
+  z-index: 1000; /* Ensure it appears above other elements */
+  margin-left: 1120px;
+}
+
+.dropdown ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.dropdown li {
+  padding: 6px; /* Add padding */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.dropdown li:hover {
+  background-color: #f0f0f0; /* Change background on hover */
+}

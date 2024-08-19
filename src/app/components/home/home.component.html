@@ -1,0 +1,19 @@
+<div class="home-layout">
+ 
+    <app-left-layout />
+    <div class = "right">
+        <router-outlet name="right">
+            
+             <img src="/assets/admin.png" alt="admin" class="admin-icon"  (click)="toggleDropdown()" >
+             <div class="dropdown" *ngIf="isDropdownOpen">
+                <ul>
+                  <li (click)="logout()">Log Out</li>
+                </ul>
+              </div>
+       
+        </router-outlet>
+    </div>
+
+</div>
+
+  

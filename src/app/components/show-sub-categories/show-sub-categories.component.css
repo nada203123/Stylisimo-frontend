@@ -1,0 +1,49 @@
+.table.table-striped.table-bordered{
+    margin-top: 50px;
+    
+    }
+    .text-center {
+        font-size: 40px;
+        font-weight: bold;
+        color:rgb(	34, 59, 121);
+        font-style: sans-serif;
+    
+    }
+    .actions {
+        text-align: center; /* Center-align text */
+        vertical-align: middle; /* Center-align vertically */
+        width: 100px;
+      }
+      .action-button {
+        width: 30px; 
+        height: 30px; 
+        vertical-align: middle;
+        text-align: center;
+        margin-left: 28px;
+        cursor: pointer;
+      }
+      .add {
+        margin-right: 4px;
+        cursor: pointer;
+      }
+      .addCategory {
+        margin-top: 80px;
+        margin-left: 970px;
+      }
+      .action-buttons {
+        display: flex;
+        align-items: center; /* Align icons vertically in the middle */
+      }
+      
+      .action-button {
+        cursor: pointer;
+        margin-right: 16px;
+      }
+      
+      .action-button.edit {
+        color: #000000; /* Edit button color */
+      }
+      
+      .action-button.delete {
+        color: #000000; /* Delete button color */
+      }

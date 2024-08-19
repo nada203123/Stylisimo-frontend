@@ -1,0 +1,95 @@
+
+.product-overview {
+  text-align: center;
+  color: rgb(34, 59, 121);
+  margin-bottom: 380px;
+}
+
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px; /* Set a max width for the container */
+  margin: 0 auto;
+  margin-top: 160px;
+}
+
+.product-card {
+  position: relative;
+  overflow: hidden;
+  padding: 16px;
+  border-radius: 8px;
+  max-width: calc(33.33% - 16px); /* Width of 3 cards in one line minus the gap */
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+  margin-bottom: 26px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.image-container {
+  position: relative;
+}
+
+.product-image {
+  width: 200px;
+  height: 200px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.1);
+}
+
+.product-name {
+  font-size: 1em;
+  margin: 8px 0;
+}
+
+.product-price {
+  color: #ff5722;
+  margin-top: -6px;
+}
+
+.details-button {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 6px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 0.7em;
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.product-card:hover .details-button {
+  opacity: 1;
+}
+.heart-icon {
+  position: absolute; /* Position the icon relative to the product card */
+  top: 173px; /* Adjust this to position it */
+  right: 3px; /* Adjust this to position it */
+  cursor: pointer; /* Change cursor to pointer */
+  font-size: 24px; /* Size of the icon */
+  color: #c91e1e; /* Change color as needed */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.product-card:hover .heart-icon {
+  opacity: 1; /* Show icon on hover */
+}
+
+
+
+.text-center{
+  margin-top: 150px;
+  
+}

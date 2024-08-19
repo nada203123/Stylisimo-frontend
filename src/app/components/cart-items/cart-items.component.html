@@ -1,0 +1,46 @@
+
+  <div class="cart-container">
+    
+    <h4 *ngIf="cartItems.length === 0">No product in your cart.</h4>
+    <div *ngIf="cartItems.length > 0">
+    <table class="cart-table" *ngIf="cartItems.length > 0">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Size</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Disponibility</th>
+          <th>Total Price</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of cartItems">
+          <td><img [src]="'http://localhost:4000/' + item.image" alt="{{ item.name }}" class="item-image" /></td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.size }}</td>
+          <td>{{ item.price }} DT</td>
+          <td>
+            <input type="number" [(ngModel)]="item.quantity"  (ngModelChange)="updateQuantity(item)" min="1" />
+          </td>
+          <td [ngClass]="{'in-stock': getStockStatus(item) === 'In Stock', 'out-of-stock': getStockStatus(item) === 'Out of Stock'}">{{ getStockStatus(item) }}</td>
+          <td>{{ item.price * item.quantity  }} DT</td>
+          <td><button class="remove-item-button" (click)="removeFromCart(item)">&#10005;</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="cart-summary">
+        <div class="total-price">
+          <strong>Total Price: {{ getTotalPrice() }} DT</strong>
+        </div>
+        <div class="cart-actions">
+         
+          <button class="continue-shopping-button" (click)="continueShopping()">Continue Shopping</button>
+          <button class="checkout-button" (click)="navigate('order')">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+   

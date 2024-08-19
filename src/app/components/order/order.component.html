@@ -1,0 +1,66 @@
+<div class="order-container">
+    <h2>Create Order</h2>
+    <form [formGroup]="orderForm" (ngSubmit)="onSubmit()">
+      <div class="form-group name-group">
+        <div class="name-input">
+          <label for="firstName">First Name</label>
+          <input id="firstName" formControlName="firstName" type="text" class="form-control" />
+          <div *ngIf="orderForm.get('firstName')?.invalid && orderForm.get('firstName')?.touched" class="error">
+            First Name is required
+          </div>
+        </div>
+        
+        <div class="name-input">
+          <label for="lastName">Last Name</label>
+          <input id="lastName" formControlName="lastName" type="text" class="form-control" />
+          <div *ngIf="orderForm.get('lastName')?.invalid && orderForm.get('lastName')?.touched" class="error">
+            Last Name is required
+          </div>
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" formControlName="email" type="email" class="form-control" />
+        <div *ngIf="orderForm.get('email')?.invalid && orderForm.get('email')?.touched" class="error">
+          Valid Email is required
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number</label>
+        <input id="phoneNumber" formControlName="phoneNumber" type="text" class="form-control" />
+        <div *ngIf="orderForm.get('phoneNumber')?.invalid && orderForm.get('phoneNumber')?.touched" class="error">
+          Valid Phone Number is required
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="governorate">Governorate</label>
+        <input id="governorate" formControlName="governorate" type="text" class="form-control" />
+        <div *ngIf="orderForm.get('governorate')?.invalid && orderForm.get('governorate')?.touched" class="error">
+          Governorate is required
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input id="address" formControlName="address" type="text" class="form-control" />
+        <div *ngIf="orderForm.get('address')?.invalid && orderForm.get('address')?.touched" class="error">
+          Address is required
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="postalCode">Postal Code</label>
+        <input id="postalCode" formControlName="postalCode" type="text" class="form-control" />
+        <div *ngIf="orderForm.get('postalCode')?.invalid && orderForm.get('postalCode')?.touched" class="error">
+          Valid Postal Code is required
+        </div>
+      </div>
+  
+  
+      <button type="submit" class="btn btn-primary" >Submit Order</button>
+    </form>
+  </div>
+  

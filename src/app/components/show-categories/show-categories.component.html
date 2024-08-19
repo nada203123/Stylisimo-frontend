@@ -1,0 +1,30 @@
+
+<div class="container mt-4">
+  <h2 class="text-center">Categories</h2>
+  <table class="table table-striped table-bordered">
+    <thead class="thead-dark">
+      <tr >
+        <th>Category Name</th>
+        <th  class="actions">Actions</th>
+      </tr>
+    </thead>
+    <tbody class="tr">
+      <tr *ngFor="let category of categories">
+        <td>{{ category.name }}</td>
+        <td>
+        
+            <mat-icon class="action-button" (click)="deleteCategory(category.id)">delete</mat-icon>
+        
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="text-right mt-3">
+    <div class="addCategory" style="display: flex; align-items: center;">
+      <mat-icon class="add" (click)="navigate('addCategory')">add_circle</mat-icon>
+
+    <span class="ml-2">Add a category</span>
+  </div>
+</div>
+
+

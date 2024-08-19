@@ -1,0 +1,51 @@
+
+  
+  .left-container {
+    width: 270px; /* Adjust width as needed */
+    background-color: rgba(243, 249, 255); /* Example background color */
+    padding: 20px;
+    
+    margin-left: 20px;
+   
+   height: calc(100vh - 5vh);
+    margin-top: 20px;
+    border: 1px solid rgba(240, 240, 240, 0.8);
+    border-radius: 10px;
+   
+  }
+  
+  .brand-logo {
+    width: 250px; /* Adjust logo width */
+    height: auto; /* Maintain aspect ratio */
+   margin-bottom: 45px;
+  }
+  
+  .navigation-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navigation-links ul li {
+    margin-bottom: 10px;
+  }
+  
+.navigation-links ul li a {
+    display: block;
+    font-size: 26px; 
+    color: #333; 
+    text-decoration: none;
+    padding: 8px;
+    transition: background-color 0.3s ease; 
+    border-radius: 30px;
+    
+  }
+  .navigation-links ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.1); 
+    color: #fff; 
+    border-radius: 30px;
+  }
+ 
+  
+
+  

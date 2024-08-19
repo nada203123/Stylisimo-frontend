@@ -1,0 +1,55 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card mt-5">
+          <div class="card-body">
+            <h2 class="card-title text-center">Sign In</h2>
+            <form [formGroup]="signInForm" class="form" (ngSubmit)="onSubmit()">
+              <div class="form-group">
+               
+                <input
+                  type="email"
+                  class="form-control custom-input"
+                 placeholder="Your Email"
+              
+                  formControlName="email"
+                  autocomplete="off"
+                  required
+                  (focus)="onEmailFocus()"
+              
+                />
+                <div *ngIf="emailError" class="text-danger">{{ emailError }}</div>
+                
+              </div>
+              <div class="form-group">
+               
+                <input
+                  type="password"
+                  class="form-control custom-input"
+                  placeholder="Your Password"
+                 
+                  formControlName="password"
+                  autocomplete="off"
+                  required
+                  (focus)="onPasswordFocus()"
+                />
+                <div *ngIf="passwordError" class="text-danger">{{ passwordError }}</div>
+                
+              </div>
+              <a  class="d-block" (click)="goToResetPasswordRequest()" >Forgot Password?</a>
+              <button type="submit" class="btn btn-primary btn-block custom-btn" [disabled]="signInForm.invalid">Sign In</button>
+            
+              <div class="text-center mt-3">
+              
+                <span>No Account?</span>
+                <a class="d-inline mt-2 ml-2" (click)="goToSignUp()">Register Now</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<app-informations></app-informations>

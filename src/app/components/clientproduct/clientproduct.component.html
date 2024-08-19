@@ -1,0 +1,31 @@
+
+
+<app-navbar></app-navbar>
+
+<div class="product-overview" id="product-overview">
+
+  <div *ngIf="products.length > 0; else noProducts" class="product-cards">
+    <div class="product-card" *ngFor="let product of products">
+      <div class="image-container">
+        <img [src]="'http://localhost:4000/' + product.image" [alt]="product.name" class="product-image">
+        <button class="details-button" (click)="goToProduct(product.id)">More Details</button>
+        <span
+  class="material-icons heart-icon"
+  (click)="toggleFavorite(product)"
+  [ngClass]="{'favorited': product.isFavorite}"
+>
+  {{ product.isFavorite ? 'favorite' : 'favorite_border' }}
+</span>
+      </div>
+      <h3 class="product-name">{{ product.name }}</h3>
+      <p class="product-price">{{ product.price }} DT</p>
+    </div>
+  </div>
+  <ng-template #noProducts>
+    <div class="text-center">
+      <h4>No products yet.</h4>
+    </div>
+  </ng-template>
+</div>
+
+<app-informations ></app-informations>

@@ -1,0 +1,68 @@
+.text-danger {
+    color: #d41a1a; /* Red color for the error message */
+    font-size: 14px;
+    margin-bottom: 5px;
+    
+  }
+
+  .form-control {
+    width: 60%; /* Make the input field take full width of the container */
+    padding: 8px; /* Adjust padding for a smaller look */
+  }
+  .text-right {
+    text-align: right; /* Align the button to the right */
+    margin-right: 80px;
+    margin-top: 10px;
+  }
+
+  
+.custom-button {
+  background-color: rgb(	34, 59, 121); /* Bootstrap primary color */
+  color: white;
+  border: none; /* Remove default border */
+  padding: 5px 10px; /* Add padding for a nicer button look */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */ 
+  margin-top: 0px;
+  margin-right: 280px;
+}
+
+.custom-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+.text-center{
+  font-size: 40px;
+  font-weight: bold;
+  color:rgb(	34, 59, 121);
+  font-style: sans-serif;
+}
+
+.form{
+  margin-top: 1px;
+  margin-left: 260px;
+  width: 900px;
+}
+.label{
+  font-size: 15px;
+
+  font-style: sans-serif;
+  font-weight: bold;
+}
+.container{
+margin-top: -10px;
+}
+.d-flex.align-items-center.mb-2{
+  width: 60%;
+}
+.remove{
+ width:29px;
+}
+.add{
+  width:29px;
+  height:29px;
+
+}
+.mat-icon.notranslate.add.material-icons.mat-ligature-font.mat-icon-no-color{
+  line-height: 1.8;
+  height:29px;
+}

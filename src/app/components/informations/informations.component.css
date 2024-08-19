@@ -1,0 +1,60 @@
+
+
+
+.footer {
+    background-color: rgb(	34, 59, 121); /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+  
+   
+    bottom: 0;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    
+    flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+    max-width: 1200px; /* Limit the max width of the footer */
+    margin: 0 auto; /* Center the footer */
+    
+  }
+  
+  .footer-section {
+    flex: 1; /* Allow sections to grow equally */
+    margin: 10px; /* Add some space around sections */
+    min-width: 200px; /* Minimum width for each section */
+  }
+  
+  .footer-section h3 {
+    border-bottom: 2px solid rgba(243, 249, 255); /* Add an underline to section headers */
+    padding-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+  }
+  
+  .footer-section li {
+    margin: 5px 0; /* Add space between list items */
+  }
+  
+  .footer-section a {
+    color: #ffffff; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .footer-bottom {
+    text-align: center; /* Center the copyright text */
+    padding: 10px 0;
+   
+  }
+  
+  

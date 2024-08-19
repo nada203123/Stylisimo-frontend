@@ -1,0 +1,36 @@
+
+   <div class="container mt-4">
+    <h2 class="text-center">Add Sub-Category</h2>
+    <form (ngSubmit)="onSubmit()" class="form">
+      <div class="form-group">
+        <label for="name" class="label">Sub-Category Name :</label>
+        <div class="input-container">
+          <input type="text" id="name" class="form-control" [(ngModel)]="subCategory.name" name="name" placeholder="SubCategory Name"     (focus)="clearNameError()" required>
+        </div>
+        <div *ngIf="isNameEmpty" class="error-message">
+          Subcategory name is required.
+        </div>
+        <div *ngIf="isDuplicateName" class="error-message">
+          SubCategory name already exists. Please choose a different name.
+        </div>
+  
+      </div>
+      <div class="form-group">
+        <label class="label">Categories :</label>
+        <div *ngFor="let category of categories" class="options">
+          <label>
+            <input type="checkbox" [value]="category.name"(change)="toggleCategorySelection(category.name);  clearCategoryError()">
+            {{ category.name }}
+          </label>
+        </div>
+        <div *ngIf="isCategoryEmpty" style="color:red;">
+          At least one category must be selected.
+        </div>
+      </div>
+  
+      <div class="text-right">
+        <button type="submit" class="btn btn-primary custom-button">Add Sub-Category</button>
+      </div>
+    </form>
+ 
+  </div>

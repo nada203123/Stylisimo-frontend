@@ -1,0 +1,33 @@
+<nav class="navbar">
+    <div class="navbar-left">
+      <img src="/assets/logo.jpg" alt="Logo" class="logo" (click)="goToHomePage()">
+    </div>
+    <div class="navbar-center">
+      <ul>
+        <li *ngFor="let category of categories" (mouseenter)="loadSubCategories(category.id)" 
+        (mouseleave)="hideSubCategories()"><a (click)="goToProducts(category.id)">{{ category.name }}</a>
+        <ul *ngIf=" selectedCategoryId === category.id" class="dropdown">
+            <li *ngFor="let subCategory of subCategories">  <a (click)="goToProductsWithSubCategory(category.id, subCategory.id)">{{ subCategory.name }} </a></li>
+          </ul>
+    </li>
+      </ul>
+    </div>
+    <div class="navbar-right">
+        <span class="material-symbols-outlined" >
+            search
+            </span>
+            <span class="material-symbols-outlined" (click)="goToFavorites()">
+              favorite
+            </span>
+      <span class="material-symbols-outlined" (click)="goToCart()">
+        local_mall
+        </span>
+        <ng-container *ngIf="isUserLoggedIn(); else signInButton">
+          <span class="material-symbols-outlined" (click)="logout()">logout</span>
+        </ng-container>
+        <ng-template #signInButton>
+          <button class="signup-button" (click)="goToNavBar()">Sign In</button>
+        </ng-template>
+
+    </div>
+  </nav>
