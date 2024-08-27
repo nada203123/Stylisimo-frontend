@@ -10,18 +10,18 @@ export class OrderService {
 
   constructor(private http: HttpClient) { }
   addOrder(orderData: any): Observable<any> {
-    return this.http.post<any>('http://localhost:4000/order/order', orderData);
+    return this.http.post<any>('http://localhost:4000/api/order/order', orderData);
   }
 
   getAllOrders(): Observable<Order[]> {
-    return this.http.get<Order[]>('http://localhost:4000/order/orders');
+    return this.http.get<Order[]>('http://localhost:4000/api/order/orders');
   }
 
   getOrdersCount(): Observable<{ count: number }> {
-    return this.http.get<{ count: number }>(`http://localhost:4000/order/ordersCount`);
+    return this.http.get<{ count: number }>(`http://localhost:4000/api/order/ordersCount`);
   }
 
   sendOrderConfirmationEmail(): Observable<any> {
-    return this.http.post(`http://localhost:4000/order/send-email`, {});
+    return this.http.post(`http://localhost:4000/api/order/send-email`, {});
   }
 }
