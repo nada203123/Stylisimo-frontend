@@ -27,13 +27,10 @@ COPY --from=build /app/dist/stylisimo-frontend /usr/share/nginx/html
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-<<<<<<< HEAD
+
 
 EXPOSE 8084
-=======
-EXPOSE 8080
 
->>>>>>> dc5d5c507baea020aff16c115bee588e0481f3c0
 
 
 CMD ["nginx", "-g", "daemon off;"]
