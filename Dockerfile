@@ -29,7 +29,7 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 
 
-EXPOSE 8084
+EXPOSE 8080
 
 
 
