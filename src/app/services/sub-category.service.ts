@@ -8,20 +8,20 @@ import { Category } from '../models/Category';
   providedIn: 'root'
 })
 export class SubCategoryService {
-  private apiUrld = 'http://localhost:4000/api/subCategories/subCategories';
+  private apiUrld = 'http://localhost:8082/api/subCategories/subCategories';
 
   constructor(private http: HttpClient) { }
   
   getCategories () : Observable<Category[]> {
-    return this.http.get<Category[]>('http://localhost:4000/api/api/categories');
+    return this.http.get<Category[]>('http://localhost:8082/api/api/categories');
   }
   
   getSubCategories () : Observable<subCategory[]> {
-    return this.http.get<subCategory[]>('http://localhost:4000/api/subCategories/subCategories');
+    return this.http.get<subCategory[]>('http://localhost:8082/api/subCategories/subCategories');
   }
 
   addSubCategory(subcategory: subCategory) : Observable<subCategory> {
-    return this.http.post<subCategory>('http://localhost:4000/api/subCategories/subCategory', subcategory);
+    return this.http.post<subCategory>('http://localhost:8082/api/subCategories/subCategory', subcategory);
    }
    deleteSubCategory(id: number): Observable<any> {
     const url = `${this.apiUrld}/${id}`;
@@ -29,17 +29,17 @@ export class SubCategoryService {
       
   }
   getSubCategoryById(id: number): Observable<subCategory> {
-    const url = `http://localhost:4000/api/subCategories/getsubCategory/${id}`;
+    const url = `http://localhost:8082/api/subCategories/getsubCategory/${id}`;
     return this.http.get<subCategory>(url);
   }
   
   updateSubCategory(subcategory: any): Observable<any> {
-    const url = `http://localhost:4000/api/subCategories/subCategory/${subcategory.id}`; 
+    const url = `http://localhost:8082/api/subCategories/subCategory/${subcategory.id}`; 
     return this.http.put(url, subcategory);
   }
   
   getSubCategoriesByCategoryId(categoryId: number): Observable<any[]> {
-    return this.http.get<any[]>(`http://localhost:4000/api/subCategories/ByCategory/${categoryId}`);
+    return this.http.get<any[]>(`http://localhost:8082/api/subCategories/ByCategory/${categoryId}`);
   }
 
 
