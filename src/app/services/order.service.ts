@@ -10,18 +10,18 @@ export class OrderService {
 
   constructor(private http: HttpClient) { }
   addOrder(orderData: any): Observable<any> {
-    return this.http.post<any>('http://localhost:8082/api/order/order', orderData);
+    return this.http.post<any>('http://stylisimo.ddns.net:8082/api/order/order', orderData);
   }
 
   getAllOrders(): Observable<Order[]> {
-    return this.http.get<Order[]>('http://localhost:8082/api/order/orders');
+    return this.http.get<Order[]>('http://stylisimo.ddns.net:8082/api/order/orders');
   }
 
   getOrdersCount(): Observable<{ count: number }> {
-    return this.http.get<{ count: number }>(`http://localhost:8082/api/order/ordersCount`);
+    return this.http.get<{ count: number }>(`http://stylisimo.ddns.net:8082/api/order/ordersCount`);
   }
 
   sendOrderConfirmationEmail(): Observable<any> {
-    return this.http.post(`http://localhost:8082/api/order/send-email`, {});
+    return this.http.post(`http://stylisimo.ddns.net:8082/api/order/send-email`, {});
   }
 }

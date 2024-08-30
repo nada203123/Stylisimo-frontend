@@ -8,8 +8,8 @@ import { Category } from '../models/Category';
   providedIn: 'root'
 })
 export class CategoryService {
-  private apiUrl = 'http://localhost:8082/api/api/category';
-  private apiUrld = 'http://localhost:8082/api/api/categories';
+  private apiUrl = 'http://stylisimo.ddns.net:8082/api/api/category';
+  private apiUrld = 'http://stylisimo.ddns.net:8082/api/api/categories';
 
   constructor(private http: HttpClient) { }
 
@@ -19,7 +19,7 @@ export class CategoryService {
   }
 
   getCategories () : Observable<Category[]> {
-    return this.http.get<Category[]>('http://localhost:8082/api/api/categories');
+    return this.http.get<Category[]>('http://stylisimo.ddns.net:8082/api/api/categories');
   }
   deleteCategory(id: number): Observable<any> {
     const url = `${this.apiUrld}/${id}`;
