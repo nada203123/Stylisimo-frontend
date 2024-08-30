@@ -59,7 +59,7 @@ goToResetPasswordRequest() {
           this.router.navigate(['/shopping']);
         } else if (response.user.role === 'admin') {
        
-          window.location.href = 'http://localhost:4200/(right:dashboard)'
+          window.location.href = 'http://stylisimo.ddns.net:8084/(right:dashboard)'
           //this.router.navigateByUrl('/dashboard');
         }
         else {

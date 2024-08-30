@@ -4,7 +4,7 @@
     <div class="product-cards" *ngIf="favorites.length > 0">
      <div class="product-card" *ngFor="let product of favorites">
         <div class="image-container">
-            <img [src]= "'http://localhost:4000/' + product.image" alt="{{ product.name }}" class="product-image">
+            <img [src]= "'http://stylisimo.ddns.net:4000/' + product.image" alt="{{ product.name }}" class="product-image">
             <button class="details-button" (click)="goToProduct(product.productId)" >More Details</button>
          </div>
             <h3 class="product-name">{{ product.name }}</h3>

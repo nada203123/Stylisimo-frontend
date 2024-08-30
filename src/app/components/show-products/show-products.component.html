@@ -15,7 +15,7 @@
         <tr *ngFor="let product of products">
           <td>{{ product.name }}</td>
           <td>
-            <img *ngIf="product.image" [src]="'http://localhost:4000/' + product.image" alt="{{ product.name }}" style="width: 50px; height: 50px;">
+            <img *ngIf="product.image" [src]="'http://stylisimo.ddns.net:8082/' + product.image" alt="{{ product.name }}" style="width: 50px; height: 50px;">
           </td>
           <td>{{ product.price}}</td>
           <td> <ul> <li *ngFor="let item of product.sizes">{{ item.size }} : {{ item.quantity }} </li> </ul> </td>

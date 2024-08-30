@@ -7,7 +7,7 @@
   <div *ngIf="products.length > 0; else noProducts" class="product-cards">
     <div class="product-card" *ngFor="let product of products">
       <div class="image-container">
-        <img [src]="'http://localhost:4000/' + product.image" [alt]="product.name" class="product-image">
+        <img [src]="'http://stylisimo.ddns.net:4000/' + product.image" [alt]="product.name" class="product-image">
         <button class="details-button" (click)="goToProduct(product.id)">More Details</button>
         <span
   class="material-icons heart-icon"
