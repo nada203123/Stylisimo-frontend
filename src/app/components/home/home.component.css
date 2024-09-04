@@ -38,7 +38,7 @@
  
 .admin-icon{
   width:30px;
-  margin-left: 1180px;
+  margin-left: 1250px;
 cursor: pointer;
 
 }
@@ -48,7 +48,7 @@ cursor: pointer;
   border: 1px solid #ccc; /* Border */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Shadow */
   z-index: 1000; /* Ensure it appears above other elements */
-  margin-left: 1120px;
+  margin-left: 1200px;
 }
 
 .dropdown ul {
