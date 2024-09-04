@@ -32,7 +32,7 @@ export class HomeComponent {
   logout(): void {
     
     localStorage.removeItem('token');
-    window.location.href = 'http://stylisimo.ddns.net:8084/signin'; // Redirect to the login page or wherever needed
+    window.location.href = 'http://stylisimo.ddns.net/signin'; // Redirect to the login page or wherever needed
   }
 
 }
