@@ -1,27 +1,27 @@
  # 👗 Stylisimo Frontend
-Stylisimo is a modern clothing e-commerce platform built with Angular for delivering a smooth and responsive shopping experience.
-This repository hosts the frontend source code — developed with reusable components, responsive design, and API integration with the backend service.
+Stylisimo est une plateforme moderne de commerce électronique dédiée à la mode, développée avec Angular pour offrir une expérience d’achat fluide, rapide et réactive.
+Ce dépôt contient le code source du frontend, conçu avec des composants réutilisables, un design responsive et une intégration complète avec l’API du backend.
 
 ## 🧩 Tech Stack
-- Framework: Angular
+- Framework : Angular
 
-- Styling: CSS / Angular Material
+- Style : CSS / Angular Material
 
-- Package Management: npm
+- Gestion des dépendances : npm
 
-- API Communication: REST (HTTPClient)
+- Communication avec l’API : REST (HTTPClient)
 
-- Version Control: Git / Bitbucket
+- Gestion de version : Git / Bitbucket
 
-## 🚀 Features
-- Responsive and mobile-friendly user interface
+## 🚀 Fonctionnalités principales
+- Interface utilisateur moderne, réactive et adaptée aux appareils mobiles
 
-- Product listing and filtering
+- Liste et filtrage des produits
 
-- User authentication & authorization
+- Authentification et autorisation des utilisateurs
 
-- Shopping cart management
+- Gestion du panier d’achat
 
-- Order history display
+- Affichage de l’historique des commandes
 
-- Integration with the backend REST API
+- Intégration complète avec l’API REST du backend
